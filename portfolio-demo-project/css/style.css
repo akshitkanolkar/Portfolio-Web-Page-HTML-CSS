@@ -1,0 +1,255 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  list-style: none !important;
+  outline: none !important;
+}
+
+/* Typography  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+}
+
+h1 {
+  font-size: 45px;
+  line-height: 1.075;
+  letter-spacing: 0.15px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 88px;
+    line-height: 92px;
+    letter-spacing: 0.15px;
+  }
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Typography ends  */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Raleway", san-serif;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #484848;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Defining site container  */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1260px;
+  }
+}
+/* Defining site container ends */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  position: relative;
+}
+
+.swap-columns {
+  flex-direction: row-reverse;
+}
+
+/* Common section styling  */
+section {
+  padding: 96px 0;
+}
+
+section h2 {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+.heading {
+  margin-bottom: 50px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.bg-gray {
+  background-color: #f2f2f2;
+}
+.bg-dark-gray {
+  background-color: #222;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+/* Setting Custom Columns  */
+[class*="col-"] {
+  width: 100%;
+  position: relative;
+  padding: 0 15px;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  [class*="col-"] {
+    padding: 0 15px;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  /* used when column width is 25%  */
+  .col-25 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  /* used when column width is 30%  */
+  .col-30 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  /* used when column width is 40%  */
+  .col-40 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+    -ms-flex: 0 0 41.666667%;
+  }
+
+  /* used when column width is 50%  */
+  .col-50 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    -ms-flex: 0 0 50%;
+  }
+
+  /* used when column width is 60%  */
+  .col-60 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+    -ms-flex: 0 0 58.333333%;
+  }
+
+  /* used when column width is 100%  */
+  .col-100 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    -ms-flex: 0 0 100;
+  }
+}
+
+/* Button styling */
+.main-btn {
+  display: inline-block;
+  background-color: #222;
+  padding: 10px 20px;
+  border: 2px solid #222;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s background-color ease;
+  -o-transition: 0.2s background-color ease;
+  transition: 0.2s background-color ease;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  color: #222;
+  background-color: transparent;
+}
+
+.main-btn.light {
+  background-color: #ffffff;
+  color: #222;
+  border: 2px solid #fff;
+}
+
+.main-btn.light:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.button.button-yellow:hover {
+  background-color: #e62b56;
+  color: #ffffff;
+}
+
+/* Button styling ends  */
+
+/* Navbar styling  */
