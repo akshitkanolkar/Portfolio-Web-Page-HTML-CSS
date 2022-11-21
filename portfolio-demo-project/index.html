@@ -269,32 +269,37 @@ Comments: Completed Responsive Website Using HTML5 and CSS3
           <h2>Get In Touch</h2>
         </div>
 
-        <form id='contact-form' method='POST'><input type='hidden' name='form-name' value='contactForm' />
+        <!-- <form id='contact-form' method='POST'><input type='hidden' name='form-name' value='contactForm' /> -->
+        <form id='contact-form'><input type='hidden' name='form-name' value='contactForm' />
           <div class="row">
             <div class="col-50 form-group">
               <!--first name-->
               <label><b>First Name:</b></label><br>
               <input type="text" class="form-control con-validate" id="first-name" placeholder="First Name">
+              <small id="valid-first-name" class="error"></small>
             </div>
             <div class="col-50 form-group">
               <!--last name-->
               <label><b>Last Name:</b></label><br>
               <input type="text" class="form-control con-validate" id="last-name" placeholder="Last Name">
+              <small id="valid-last-name" class="error"></small>
             </div>
             <div class="col-50 form-group">
               <!--email-->
               <label><b>Email:</b></label><br>
               <input type="email" class="form-control con-validate" id="contact-email" placeholder="Email">
+              <small id="valid-email" class="error"></small>
             </div>
             <div class="col-50 form-group">
               <!--ph no-->
               <label><b>Phone No:</b></label><br>
               <input type="text" class="form-control con-validate" id="phno" placeholder="Phone No" minlength="10">
+              <small id="valid-phone-number" class="error"></small>
             </div>
             <div class="col-50 form-group">
               <!--gender-->
                 <label><b>Gender:</b></label><br>
-                <input type="radio" id="male" name="gender" value="Male">
+                <input type="radio" id="male" name="gender" value="Male" checked>
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="Female">
                 <label for="female">Female</label><br>
@@ -303,11 +308,13 @@ Comments: Completed Responsive Website Using HTML5 and CSS3
               <!--interested in-->
               <label><b>Interested in:</b></label><br>
               <select id="interest" name="interest">
+                <option value="" id="select-option">Select an Option</option>
                 <option value="Logo Designing">Logo Designing</option>
                 <option value="Web Designing">Web Designing</option>
                 <option value="Website Development">Website Development</option>
                 <option value="Mobile App">Mobile App</option>
               </select>
+              <small id="valid-select-interest" class="error"></small>
             </div>
             <div class="col-100 form-group">
               <!--message box-->
@@ -372,6 +379,7 @@ Comments: Completed Responsive Website Using HTML5 and CSS3
     </footer>
     <!--Footer End-->
   </main>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
