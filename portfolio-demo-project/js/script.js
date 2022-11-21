@@ -140,6 +140,11 @@ contactSubmit.addEventListener("click", (e) => {
         validInterest &&
         validPhoneNumber
     ) {
+        firstNameMessage.innerHTML = "";
+        lastNameMessage.innerHTML = "";
+        phoneMessage.innerHTML = "";
+        emailMessage.innerHTML = "";
+        interestMessage.innerHTML = "";
         const formData = {
             firstName: firstName.value,
             lastName: lastName.value,
