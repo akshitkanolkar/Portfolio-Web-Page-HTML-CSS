@@ -6,7 +6,7 @@ Created Date: 17-Nov-2022
 -------------------------------------
 Modified By: Punit Korgaonkar
 Modified Date: 17-Nov-2022
-Comments: Completed Services Section 
+Comments: Completed Responsive Website Using HTML5 and CSS3
 --------------------------------------->
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ Comments: Completed Services Section
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML5 and CSS3 Workshop</title>
+  <title>My Portfolio | HTML5 and CSS3 Workshop</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Google Fonts -->
@@ -34,7 +34,7 @@ Comments: Completed Services Section
     <div class="container flex-container">
       <!-- LOGO -->
       <a class="navbar-brand logo" href="index.html">
-        PK
+        Punit
       </a>
 
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -113,7 +113,7 @@ Comments: Completed Services Section
                 of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
               <!--About Social Icons-->
               <span class="about-button">
-                <a class="main-btn" href="#">Download CV</a>
+                <a class="main-btn" href="pdf/resume.pdf" target="_blank">Download CV</a>
               </span>
             </div>
           </div>
@@ -272,15 +272,46 @@ Comments: Completed Services Section
         <form id='contact-form' method='POST'><input type='hidden' name='form-name' value='contactForm' />
           <div class="row">
             <div class="col-50 form-group">
-              <!--name-->
-              <input type="text" class="form-control con-validate" id="contact-name" placeholder="Name" minlength="3">
+              <!--first name-->
+              <label><b>First Name:</b></label><br>
+              <input type="text" class="form-control con-validate" id="first-name" placeholder="First Name">
+            </div>
+            <div class="col-50 form-group">
+              <!--last name-->
+              <label><b>Last Name:</b></label><br>
+              <input type="text" class="form-control con-validate" id="last-name" placeholder="Last Name">
             </div>
             <div class="col-50 form-group">
               <!--email-->
+              <label><b>Email:</b></label><br>
               <input type="email" class="form-control con-validate" id="contact-email" placeholder="Email">
+            </div>
+            <div class="col-50 form-group">
+              <!--ph no-->
+              <label><b>Phone No:</b></label><br>
+              <input type="text" class="form-control con-validate" id="phno" placeholder="Phone No" minlength="10">
+            </div>
+            <div class="col-50 form-group">
+              <!--gender-->
+                <label><b>Gender:</b></label><br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label><br>
+            </div>
+            <div class="col-50 form-group">
+              <!--interested in-->
+              <label><b>Interested in:</b></label><br>
+              <select id="interest" name="interest">
+                <option value="Logo Designing">Logo Designing</option>
+                <option value="Web Designing">Web Designing</option>
+                <option value="Website Development">Website Development</option>
+                <option value="Mobile App">Mobile App</option>
+              </select>
             </div>
             <div class="col-100 form-group">
               <!--message box-->
+              <label><b>Message:</b></label><br>
               <textarea class="form-control con-validate" id="contact-message" placeholder="How can we help you?"
                 rows="6"></textarea>
             </div>
