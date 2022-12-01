@@ -152,6 +152,10 @@ img {
   height: auto;
 }
 
+.error {
+  color: #e62b56;
+}
+
 /* Setting Custom Columns  */
 [class*="col-"] {
   width: 100%;
