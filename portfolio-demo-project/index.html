@@ -1,377 +1,387 @@
 <!-------------------------------------
-Task Name: Portfolio web page
--------------------------------------
-Created By: Punit Korgaonkar
-Created Date: 17-Nov-2022
--------------------------------------
-Modified By: Punit Korgaonkar
-Modified Date: 17-Nov-2022
-Comments: Completed Responsive Website Using HTML5 and CSS3
---------------------------------------->
+    Task Name: Portfolio web page
+    -------------------------------------
+    Created By: Punit Korgaonkar
+    Created Date: 17-Nov-2022
+    -------------------------------------
+    Modified By: Punit Korgaonkar
+    Modified Date: 17-Nov-2022
+    Comments: Completed Responsive Website Using HTML5 and CSS3
+    --------------------------------------->
+    
+    <!DOCTYPE html>
+    <html>
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>My Portfolio | HTML5 and CSS3 Workshop</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <!-- Google Fonts -->
+      <link
+        href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900%7cOpen+Sans:400,600,700,800"
+        rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+      <!--Navbar Start-->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container flex-container">
+          <!-- LOGO -->
+          <a class="navbar-brand logo" href="index.html">
+            Punit
+          </a>
 
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio | HTML5 and CSS3 Workshop</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900%7cOpen+Sans:400,600,700,800"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <!--Navbar Start-->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container flex-container">
-      <!-- LOGO -->
-      <a class="navbar-brand logo" href="index.html">
-        Punit
-      </a>
-
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="navbar-collapse collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-          <!--Nav Links-->
-          <li class="nav-item">
-            <a href="#" class="nav-link active" data-scroll-nav="0">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link" data-scroll-nav="1">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#services" class="nav-link" data-scroll-nav="2">Services</a>
-          </li>
-          <li class="nav-item">
-            <a href="#work" class="nav-link" data-scroll-nav="3">Works</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link" data-scroll-nav="4">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!--Navbar End-->
-
-  <main>
-    <!--Hero Section Start-->
-    <section class="hero-banner">
-      <div class="container">
-        <div class="content-wrap">
-          <h1>Hi! I'm Punit.</h1>
-          <p>I have done my B.E. in Computer Science from Agnel Institute of technology and design.
-            <br>
-            I'm currently working at Creative Capsule, Verna-Goa
-            <br>
-            Specialized in
-            <span id="spin"></span>
-          </p>
-
-        </div>
-      </div>
-    </section>
-    <!--Hero Section End-->
-
-    <!--About Section Start-->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-50">
-            <!--About Image-->
-            <div class="about-img">
-              <img src="images/about-img.jpg" alt="">
-            </div>
+          <div class="navbar-toggler" id="menu-toggle">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
           </div>
-          <div class="col-50">
-            <!--About Content-->
-            <div class="about-content">
-              <div class="about-heading">
-                <h2>About Me.</h2>
-                <span>UI/UX Designer & Web Developer</span>
-              </div>
-              <p>I'm
-                <b>Punit Korgaonkar</b>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to specimen book.
+
+          <div class="navbar-collapse collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <!--Nav Links-->
+              <li class="nav-item">
+                <a href="#" class="nav-link active" data-scroll-nav="0">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link" data-scroll-nav="1">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link" data-scroll-nav="2">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#work" class="nav-link" data-scroll-nav="3">Works</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link" data-scroll-nav="4">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Navbar End-->
+    
+      <main>
+        <!--Hero Section Start-->
+        <section class="hero-banner">
+          <div class="container">
+            <div class="content-wrap">
+              <h1>Hi! I'm Punit.</h1>
+              <p>I have done my B.E. in Computer Science from Agnel Institute of technology and design.
+                <br>
+                I'm currently working at Creative Capsule, Verna-Goa
+                <br>
+                Specialized in
+                <span id="spin"></span>
               </p>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
-                of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-              <!--About Social Icons-->
-              <span class="about-button">
-                <a class="main-btn" href="pdf/resume.pdf" target="_blank">Download CV</a>
-              </span>
+    
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!--About Section End-->
-
-    <!--Services Section Start-->
-    <section class="services bg-gray" id="services">
-      <div class="container">
-        <div class="heading text-center">
-          <h6>Services</h6>
-          <h2>What I Can Do</h2>
-        </div>
-        <div class="row">
-          <div class="col-30">
-            <!--Service Item-->
-            <div class="service-item">
-              <span class="icon">
-                <i class="fa fa-laptop"></i>
-              </span>
-              <h4>Web Design</h4>
-              <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+        </section>
+        <!--Hero Section End-->
+    
+        <!--About Section Start-->
+        <section class="about" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-50">
+                <!--About Image-->
+                <div class="about-img">
+                  <img src="images/about-img.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-50">
+                <!--About Content-->
+                <div class="about-content">
+                  <div class="about-heading">
+                    <h2>About Me.</h2>
+                    <span>UI/UX Designer & Web Developer</span>
+                  </div>
+                  <p>I'm
+                    <b>Punit Korgaonkar</b>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to specimen book.
+                  </p>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                    of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                  <!--About Social Icons-->
+                  <span class="about-button">
+                    <a class="main-btn" href="pdf/resume.pdf" target="_blank">Download CV</a>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-30">
-            <!--Service Item-->
-            <div class="service-item">
-              <span class="icon">
-                <i class="fa fa-gears"></i>
-              </span>
-              <h4>Web Development</h4>
-              <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+        </section>
+        <!--About Section End-->
+    
+        <!--Services Section Start-->
+        <section class="services bg-gray" id="services">
+          <div class="container">
+            <div class="heading text-center">
+              <h6>Services</h6>
+              <h2>What I Can Do</h2>
+            </div>
+            <div class="row">
+              <div class="col-30">
+                <!--Service Item-->
+                <div class="service-item">
+                  <span class="icon">
+                    <i class="fa fa-laptop"></i>
+                  </span>
+                  <h4>Web Design</h4>
+                  <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+              </div>
+              <div class="col-30">
+                <!--Service Item-->
+                <div class="service-item">
+                  <span class="icon">
+                    <i class="fa fa-gears"></i>
+                  </span>
+                  <h4>Web Development</h4>
+                  <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+              </div>
+              <div class="col-30">
+                <!--Service Item-->
+                <div class="service-item">
+                  <span class="icon">
+                    <i class="fa fa-mobile"></i>
+                  </span>
+                  <h4>Responsive Design</h4>
+                  <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+              </div>
+              <div class="col-30">
+                <!--Service Item-->
+                <div class="service-item">
+                  <span class="icon">
+                    <i class="fa fa-rocket"></i>
+                  </span>
+                  <h4>Branding Identity</h4>
+                  <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+              </div>
+              <div class="col-30">
+                <!--Service Item-->
+                <div class="service-item">
+                  <span class="icon">
+                    <i class="fa fa-pencil"></i>
+                  </span>
+                  <h4>Creative Design</h4>
+                  <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+              </div>
+              <div class="col-30">
+                <!--Service Item-->
+                <div class="service-item">
+                  <span class="icon">
+                    <i class="fa fa-support"></i>
+                  </span>
+                  <h4>Support</h4>
+                  <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-30">
-            <!--Service Item-->
-            <div class="service-item">
-              <span class="icon">
-                <i class="fa fa-mobile"></i>
-              </span>
-              <h4>Responsive Design</h4>
-              <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+        </section>
+        <!--Services Section End-->
+    
+        <!--Work Section Start-->
+        <section class="latest-works bg-dark-gray" id="work">
+          <div class="container">
+            <div class="heading text-center">
+              <h6>Portfolio</h6>
+              <h2>Work I Have Done</h2>
+            </div>
+    
+            <div class="row content-row swap-columns">
+              <div class="col-60">
+                <div class="image-wrapper">
+                  <img src="./images/latest-work-1.jpg" alt="Digital Painting" />
+                </div>
+              </div>
+              <div class="col-40">
+                <div class="content-wrapper">
+                  <h3>Digital Painting</h3>
+                  <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+                    ultricies nisi. Nam eget dui.Etiam rhoncus. Maecenas tempus, tellus eget
+                    condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed
+                    ipsum.</p>
+                  <a class="main-btn light" href="javascript:void(0);">show more</a>
+    
+                </div>
+              </div>
+            </div>
+            <div class="row content-row">
+              <div class="col-60">
+                <div class="image-wrapper">
+                  <img src="./images/latest-work-2.jpg" alt="Digital Painting" />
+                </div>
+              </div>
+              <div class="col-40">
+                <div class="content-wrapper">
+                  <h3>Concept Art.</h3>
+                  <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+                    ultricies nisi. Nam eget dui.Etiam rhoncus. Maecenas tempus, tellus eget
+                    condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque
+                    sed
+                    ipsum.</p>
+                  <a class="main-btn light" href="javascript:void(0);">show more</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-30">
-            <!--Service Item-->
-            <div class="service-item">
-              <span class="icon">
-                <i class="fa fa-rocket"></i>
-              </span>
-              <h4>Branding Identity</h4>
-              <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+        </section>
+        <!--Work Section End-->
+    
+        <!--Testimonials Section Start-->
+        <section class="testimonials" style="background-image: url('images/testimonials-bg.jpg')" id="testimonials">
+          <div class="container">
+            <div class="testimonial-item">
+              <div class="author-img">
+                <img src="images/img-1.jpg" alt="Jon Doe profile">
+              </div>
+              <h5>Mr John Doe</h5>
+              <span>Creative Director</span>
+              <p>Dolor facilis veritatis doloremque dicta eos Voluptate earum nulla ad et esse Saepe asperiores nisi facere
+                ipsam corporis. Dolorem praesentium tenetur tempore dolorem illum autem? Veritatis fuga quasi sunt tenetur.
+                Expedita id eaque incidunt beatae nesciunt! In similique exercitationem tempore excepturi placeat Nostrum
+                ducimus dicta temporibus quas!</p>
             </div>
           </div>
-          <div class="col-30">
-            <!--Service Item-->
-            <div class="service-item">
-              <span class="icon">
-                <i class="fa fa-pencil"></i>
-              </span>
-              <h4>Creative Design</h4>
-              <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+        </section>
+        <!--Testimonials Section End-->
+    
+        <!--Contact Section Start-->
+        <section class="contact" id="contact">
+          <div class="container">
+            <div class="heading text-center">
+              <h6>Contact</h6>
+              <h2>Get In Touch</h2>
+            </div>
+    
+            <!-- <form id='contact-form' method='POST'><input type='hidden' name='form-name' value='contactForm' /> -->
+            <form id='contact-form'><input type='hidden' name='form-name' value='contactForm' />
+              <div class="row">
+                <div class="col-50 form-group">
+                  <!--first name-->
+                  <label><b>First Name:</b></label><br>
+                  <input type="text" class="form-control con-validate" id="first-name" placeholder="First Name">
+                  <small id="valid-first-name" class="error"></small>
+                </div>
+                <div class="col-50 form-group">
+                  <!--last name-->
+                  <label><b>Last Name:</b></label><br>
+                  <input type="text" class="form-control con-validate" id="last-name" placeholder="Last Name">
+                  <small id="valid-last-name" class="error"></small>
+                </div>
+                <div class="col-50 form-group">
+                  <!--email-->
+                  <label><b>Email:</b></label><br>
+                  <input type="email" class="form-control con-validate" id="contact-email" placeholder="Email">
+                  <small id="valid-email" class="error"></small>
+                </div>
+                <div class="col-50 form-group">
+                  <!--ph no-->
+                  <label><b>Phone No:</b></label><br>
+                  <input type="text" class="form-control con-validate" id="phno" placeholder="Phone No" minlength="10">
+                  <small id="valid-phone-number" class="error"></small>
+                </div>
+                <div class="col-50 form-group">
+                  <!--gender-->
+                    <label><b>Gender:</b></label><br>
+                    <input type="radio" id="male" name="gender" value="Male" checked>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label><br>
+                </div>
+                <div class="col-50 form-group">
+                  <!--interested in-->
+                  <label><b>Interested in:</b></label><br>
+                  <select id="interest" name="interest">
+                    <option value="" id="select-option">Select an Option</option>
+                    <option value="Logo Designing">Logo Designing</option>
+                    <option value="Web Designing">Web Designing</option>
+                    <option value="Website Development">Website Development</option>
+                    <option value="Mobile App">Mobile App</option>
+                  </select>
+                  <br>
+                  <small id="valid-select-interest" class="error"></small>
+                </div>
+                <div class="col-100 form-group">
+                  <!--message box-->
+                  <label><b>Message:</b></label><br>
+                  <textarea class="form-control con-validate" id="contact-message" placeholder="How can we help you?"
+                    rows="6"></textarea>
+                </div>
+                <div class="col-100 text-center">
+                  <!--contact button-->
+                  <button id="contact-submit" class="mt-30 main-btn">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!--Contact Section End-->
+    
+        <!--Footer Start-->
+        <footer class="pt-50 pb-50">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-25">
+                <!--Contant Item-->
+                <div class="contact-info">
+                  <h5>Kalvin</h5>
+                  <p>lorem Ipsum donor sit.</p>
+                </div>
+              </div>
+              <div class="col-25">
+                <!--Contant Item-->
+                <div class="contact-info">
+                  <h5>Phone No.</h5>
+                  <p>(+1) 123 456 7890</p>
+                </div>
+              </div>
+              <div class="col-25">
+                <!--Contant Item-->
+                <div class="contact-info">
+                  <h5>Email</h5>
+                  <p>info@example.com</p>
+                </div>
+              </div>
+              <div class="col-25">
+                <!--Contant Item-->
+                <div class="contact-info">
+                  <h5>Address</h5>
+                  <p>123 lorem ipsum Panjim, GOA.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col-md-12">
+                <hr>
+                <p class="copy pt-30">
+                  Creative Capsule &copy; 2022. All Right Reserved, Designed & Developed By Punit.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-30">
-            <!--Service Item-->
-            <div class="service-item">
-              <span class="icon">
-                <i class="fa fa-support"></i>
-              </span>
-              <h4>Support</h4>
-              <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Services Section End-->
-
-    <!--Work Section Start-->
-    <section class="latest-works bg-dark-gray" id="work">
-      <div class="container">
-        <div class="heading text-center">
-          <h6>Portfolio</h6>
-          <h2>Work I Have Done</h2>
-        </div>
-
-        <div class="row content-row swap-columns">
-          <div class="col-60">
-            <div class="image-wrapper">
-              <img src="./images/latest-work-1.jpg" alt="Digital Painting" />
-            </div>
-          </div>
-          <div class="col-40">
-            <div class="content-wrapper">
-              <h3>Digital Painting</h3>
-              <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-                ultricies nisi. Nam eget dui.Etiam rhoncus. Maecenas tempus, tellus eget
-                condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed
-                ipsum.</p>
-              <a class="main-btn light" href="javascript:void(0);">show more</a>
-
-            </div>
-          </div>
-        </div>
-        <div class="row content-row">
-          <div class="col-60">
-            <div class="image-wrapper">
-              <img src="./images/latest-work-2.jpg" alt="Digital Painting" />
-            </div>
-          </div>
-          <div class="col-40">
-            <div class="content-wrapper">
-              <h3>Concept Art.</h3>
-              <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-                ultricies nisi. Nam eget dui.Etiam rhoncus. Maecenas tempus, tellus eget
-                condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque
-                sed
-                ipsum.</p>
-              <a class="main-btn light" href="javascript:void(0);">show more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Work Section End-->
-
-    <!--Testimonials Section Start-->
-    <section class="testimonials" style="background-image: url('images/testimonials-bg.jpg')" id="testimonials">
-      <div class="container">
-        <div class="testimonial-item">
-          <div class="author-img">
-            <img src="images/img-1.jpg" alt="Jon Doe profile">
-          </div>
-          <h5>Mr John Doe</h5>
-          <span>Creative Director</span>
-          <p>Dolor facilis veritatis doloremque dicta eos Voluptate earum nulla ad et esse Saepe asperiores nisi facere
-            ipsam corporis. Dolorem praesentium tenetur tempore dolorem illum autem? Veritatis fuga quasi sunt tenetur.
-            Expedita id eaque incidunt beatae nesciunt! In similique exercitationem tempore excepturi placeat Nostrum
-            ducimus dicta temporibus quas!</p>
-        </div>
-      </div>
-    </section>
-    <!--Testimonials Section End-->
-
-    <!--Contact Section Start-->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="heading text-center">
-          <h6>Contact</h6>
-          <h2>Get In Touch</h2>
-        </div>
-
-        <form id='contact-form' method='POST'><input type='hidden' name='form-name' value='contactForm' />
-          <div class="row">
-            <div class="col-50 form-group">
-              <!--first name-->
-              <label><b>First Name:</b></label><br>
-              <input type="text" class="form-control con-validate" id="first-name" placeholder="First Name">
-            </div>
-            <div class="col-50 form-group">
-              <!--last name-->
-              <label><b>Last Name:</b></label><br>
-              <input type="text" class="form-control con-validate" id="last-name" placeholder="Last Name">
-            </div>
-            <div class="col-50 form-group">
-              <!--email-->
-              <label><b>Email:</b></label><br>
-              <input type="email" class="form-control con-validate" id="contact-email" placeholder="Email">
-            </div>
-            <div class="col-50 form-group">
-              <!--ph no-->
-              <label><b>Phone No:</b></label><br>
-              <input type="text" class="form-control con-validate" id="phno" placeholder="Phone No" minlength="10">
-            </div>
-            <div class="col-50 form-group">
-              <!--gender-->
-                <label><b>Gender:</b></label><br>
-                <input type="radio" id="male" name="gender" value="Male">
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="Female">
-                <label for="female">Female</label><br>
-            </div>
-            <div class="col-50 form-group">
-              <!--interested in-->
-              <label><b>Interested in:</b></label><br>
-              <select id="interest" name="interest">
-                <option value="Logo Designing">Logo Designing</option>
-                <option value="Web Designing">Web Designing</option>
-                <option value="Website Development">Website Development</option>
-                <option value="Mobile App">Mobile App</option>
-              </select>
-            </div>
-            <div class="col-100 form-group">
-              <!--message box-->
-              <label><b>Message:</b></label><br>
-              <textarea class="form-control con-validate" id="contact-message" placeholder="How can we help you?"
-                rows="6"></textarea>
-            </div>
-            <div class="col-100 text-center">
-              <!--contact button-->
-              <button id="contact-submit" class="mt-30 main-btn">
-                Send Message
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!--Contact Section End-->
-
-    <!--Footer Start-->
-    <footer class="pt-50 pb-50">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-25">
-            <!--Contant Item-->
-            <div class="contact-info">
-              <h5>Kalvin</h5>
-              <p>lorem Ipsum donor sit.</p>
-            </div>
-          </div>
-          <div class="col-25">
-            <!--Contant Item-->
-            <div class="contact-info">
-              <h5>Phone No.</h5>
-              <p>(+1) 123 456 7890</p>
-            </div>
-          </div>
-          <div class="col-25">
-            <!--Contant Item-->
-            <div class="contact-info">
-              <h5>Email</h5>
-              <p>info@example.com</p>
-            </div>
-          </div>
-          <div class="col-25">
-            <!--Contant Item-->
-            <div class="contact-info">
-              <h5>Address</h5>
-              <p>123 lorem ipsum Panjim, GOA.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-12">
-            <hr>
-            <p class="copy pt-30">
-              Creative Capsule &copy; 2022. All Right Reserved, Designed & Developed By Punit.
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--Footer End-->
-  </main>
-</body>
-
-</html>
+        </footer>
+        <!--Footer End-->
+      </main>
+      <script src="./js/script.js"></script>
+    </body>
+    
+    </html>
